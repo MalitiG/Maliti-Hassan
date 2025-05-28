@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Short+Stack&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff9fb;
+    color: #5a3d5c;
+}
+
+.handwriting {
+    font-family: 'Short Stack', cursive;
+}
+
+.blob {
+    border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+}
+
+.heartbeat {
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    14% { transform: scale(1.1); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.1); }
+    70% { transform: scale(1); }
+}
+
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #e8a0bf;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+.project-card {
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(154, 96, 150, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(154, 96, 150, 0.2);
+}
+
+/* Typewriter effect */
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid #e8a0bf;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .0em;
+    animation:
+        typing 3.5s steps(20, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 10 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #e8a0bf; }
+}
+/* HERO SECTION STYLES */
+
+        .hero {
+            background-color: #fff9fb;
+            color: #5a3d5c;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            font-family: 'Segoe UI', 'Arial', sans-serif;
+            background-image: url('background2.png.jpg'); /* your image path here */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+          }
+          
+
+      
+  
+  .hero-content {
+    max-width: 800px;
+    padding: 20px;
+  }
+  
+  .welcome {
+    font-style: oblique;
+    font-size: 2rem;
+    font-weight: 300;
+    color:  #00ffff;
+    margin-bottom: 10px;
+  }
+
+.hero h1 {
+    font-style: italic;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color:  #00ffff;
+  }
+  
+  .hero h2 {
+    font-style: italic;
+    font-size: 2rem;
+    margin-top: 10px;
+    position: relative;
+    color: #00ffff;
+  }
+
+  /* Footer */
+footer {
+    text-align: center;
+    font-size: 1rem;
+    background-color: #fff9fb;
+    color: #e8a0bf;
+}
+
