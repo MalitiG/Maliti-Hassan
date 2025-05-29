@@ -99,7 +99,7 @@ body {
             position: relative;
             z-index: 1;
             font-family: 'Segoe UI', 'Arial', sans-serif;
-            background-image: url('background2.png.jpg'); /* your image path here */
+            background-image: url('images.png/background2.png.jpg'); /* your image path here */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
