@@ -114,31 +114,32 @@
     </section>
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 px-4 bg-pink-50">
-        <h3 class="text-3xl font-bold text-center mb-10 text-pink-600">Get in Touch</h3>
-        <p class="text-1xl text-center mb-10 text-pink-600">Reach out for work, collaboration, or just to connect!</p>
-    
+  <!-- Contact Section -->
+<section id="contact" class="py-20 px-4 bg-pink-50">
+    <h3 class="text-3xl font-bold text-center mb-10 text-pink-600">Get in Touch</h3>
+    <p class="text-1xl text-center mb-10 text-pink-600">Reach out for work, collaboration, or just to connect!</p>
 
-         
-        <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-md">
-            <form>
-                <label class="block mb-4">
-                    <span class="text-gray-700">Name</span>
-                    <input type="text" class="mt-1 block w-full rounded-md border-pink-300 shadow-sm focus:ring focus:ring-pink-200" placeholder="Your name" />
+    <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-md">
+
+        <!-- Formspree form -->
+       <form action="https://formspree.io/f/mwpbnlqg" method="POST" target="_blank">
+            <label class="block mb-4">
+               <span class="text-gray-700">Name</span>
+                <input type="text" class="mt-1 block w-full rounded-md border-pink-300 shadow-sm focus:ring focus:ring-pink-200" placeholder="Your name" />
                 </label>
-                <label class="block mb-4">
-                    <span class="text-gray-700">Email</span>
-                    <input type="email" class="mt-1 block w-full rounded-md border-pink-300 shadow-sm focus:ring focus:ring-pink-200" placeholder="you@example.com" />
-                </label>
-                <label class="block mb-4">
-                    <span class="text-gray-700">Message</span>
-                    <textarea rows="4" class="mt-1 block w-full rounded-md border-pink-300 shadow-sm focus:ring focus:ring-pink-200" placeholder="Let's connect!"></textarea>
-                </label>
-                <button type="submit" class="bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition">Send Message</button>
-            </form>
-        </div>
-    </section>
+                <span class="text-gray-700">Your email</span>
+                <input type="email" name="email" class="mt-1 block w-full rounded-md border-pink-300 shadow-sm focus:ring focus:ring-pink-200" placeholder="you@example.com" required />
+            </label>
+            <label class="block mb-4">
+                <span class="text-gray-700">Your message</span>
+                <textarea name="message" rows="4" class="mt-1 block w-full rounded-md border-pink-300 shadow-sm focus:ring focus:ring-pink-200" placeholder="Let's connect!" required></textarea>
+            </label>
+            <button type="submit" class="bg-pink-500 text-white px-6 py-2 rounded-full hover:bg-pink-600 transition">Send Message</button>
+        </form>
+
+    </div>
+</section>
+
 
      <section>
         <section id="contact" class="py-20 px-4 bg-pink-50">
