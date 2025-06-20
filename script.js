@@ -39,14 +39,6 @@ function erase() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  if (textArray.length) setTimeout(type, newTextDelay);
-});
-
-window.addEventListener("submit", function (e) {
-  alert("Thank you! Your message has been sent.");
-}, false);
-
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("#contact form");
