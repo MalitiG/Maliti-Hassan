@@ -39,6 +39,9 @@ function erase() {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  if (textArray.length) setTimeout(type, newTextDelay);
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("#contact form");
