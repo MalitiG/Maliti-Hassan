@@ -66,4 +66,43 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Smooth scrolling for navigation links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// ScrollReveal animations
+document.addEventListener("DOMContentLoaded", function () {
+    const sr = ScrollReveal({
+        distance: '50px',
+        duration: 1500,
+        easing: 'cubic-bezier(0.5, 0, 0, 1)',
+        reset: true,
+    });
+
+    sr.reveal('.hero-content, .fade-in-title', {
+        origin: 'top',
+        interval: 200,
+    });
+
+    sr.reveal('#about .md\\:flex, #Services .md\\:flex', {
+        origin: 'left',
+    });
+
+    sr.reveal('.project-card', {
+        origin: 'bottom',
+        interval: 200,
+    });
+
+    sr.reveal('#contact .max-w-xl', {
+        origin: 'bottom',
+    });
+});
+
 
